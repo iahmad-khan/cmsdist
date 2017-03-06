@@ -13,7 +13,7 @@ Requires: gsl
 Requires: hepmc
 Requires: fastjet
 Requires: madgraph5amcatnlo
-Requires: gosam
+Requires: gosam gosamcontrib
 
 
 %if %isamd64
@@ -55,6 +55,7 @@ PLATF_CONF_OPTS="--enable-shared --disable-static"
             --with-boost=$BOOST_ROOT \
 	          --with-madgraph=$MADGRAPH5AMCATNLO_ROOT \
             --with-gosam=$GOSAM_ROOT \
+            --with-gosam-contrib=$GOSAMCONTRIB_ROOT \
 %if %isamd64
             --with-openloops=$OPENLOOPS_ROOT \
 %endif
